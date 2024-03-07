@@ -23,6 +23,6 @@ def is_prime(input):
             return False
     return True
 prima = [i for i in range (min,max+1) if is_prime(i) ]
-komposit = { i for i in range (min,max+1) if not is_prime(i) }
+komposit = ([i for i in range (min,max+1) if not is_prime(i)]) #dict() menyebabkan error
 print(f"Prima = {prima}")
-print(f"Komposit = dict_values{komposit}")
+print(f"Komposit = dict_values({komposit})")
