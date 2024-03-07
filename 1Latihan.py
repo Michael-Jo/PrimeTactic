@@ -22,7 +22,7 @@ def is_prime(input):
         if input % i == 0:
             return False
     return True
-prima = [i for i in range (min,max) if is_prime(i) ]
-komposit = { i for i in range (min,max) if not is_prime(i) }
+prima = [i for i in range (min,max+1) if is_prime(i) ]
+komposit = { i for i in range (min,max+1) if not is_prime(i) }
 print(f"Prima = {prima}")
 print(f"Komposit = dict_values{komposit}")
